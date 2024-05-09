@@ -1,10 +1,11 @@
 const Alpaca = require('@alpacahq/alpaca-trade-api')
 
 
-
+//Used to be secret keys here, couldn't bother scrubbing them from the repo.
+//They're long expired, don't bother trying to use them
 const alpaca = new Alpaca({
-    keyId: 'PKR876VQM0MIOQAN33RR',
-    secretKey: 'S6Vh3iF4WZdy3L4h0eEWx5hRoHWZU2gJPWHOobJ6',
+    keyId: 'XXX',
+    secretKey: 'XXX',
     paper: true,
 })
 
@@ -12,8 +13,8 @@ const options = {
     method: 'GET',
     headers: {
         accept: 'application/json',
-        'APCA-API-KEY-ID': 'PKR876VQM0MIOQAN33RR',
-        'APCA-API-SECRET-KEY': 'S6Vh3iF4WZdy3L4h0eEWx5hRoHWZU2gJPWHOobJ6'
+        'APCA-API-KEY-ID': 'XXX',
+        'APCA-API-SECRET-KEY': 'XXX'
     }
 };
 
