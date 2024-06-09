@@ -21,14 +21,14 @@ const options = {
 var convo;
 
 async function main(){
-    // Get our account information.
+    // get account information
     const account = await alpaca.getAccount()
 
     //get date and time as string
     var today = new Date();
     var date = today.getFullYear() + '-' + (today.getMonth() + 1) + '-' + today.getDate();
 
-    // Get a list of all of our positions.
+    // get a list of all positions.
     var processedPositions = [];
     const positions = await alpaca.getPositions()
     if (positions.length == 0) {
@@ -43,7 +43,7 @@ async function main(){
     }
 
     // get market data from newsapi
-    //TODO: replace example symbol with watchlist + assets
+    // defaults to whatever is in line 54 if no positions, replace whats there if you want
 
     var positionSymbols = [];
     for (var i = 0; i < positions.length; i++) {
